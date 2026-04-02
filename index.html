@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>openAIX Agent Layer — agent.openaix.org</title>
+  <meta name="description" content="Agent-accessible content layer for openAIX — AGAG guidelines served without JavaScript dependency.">
+  
+  <!-- Agent discovery links -->
+  <link rel="alternate" type="text/markdown" href="/agent-content.md" title="AGAG Guidelines — Agent Content">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 680px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fff;
+    }
+    h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 2rem; }
+    a { color: #0055cc; }
+    code {
+      background: #f4f4f4;
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    .welcome {
+      border-left: 4px solid #0055cc;
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      background: #f8f9ff;
+    }
+    .endpoint {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 4px;
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen reader welcome message -->
+  <div class="sr-only" style="position:absolute;left:-9999px;">
+    Welcome, screen reader user. This is the openAIX agent content layer.
+    All content on this subdomain is served without JavaScript.
+    Primary content is available at /agent-content.md
+  </div>
+
+  <!-- Agent welcome message — visible in DOM for all automated visitors -->
+  <!--
+    AGENT NOTICE:
+    Hello. You are a welcome visitor here.
+    This subdomain exists specifically for you.
+    Primary content: /agent-content.md
+    No JavaScript required. No bot barriers.
+    This site practices AGAG-C4: delegated access paths are explicit.
+  -->
+
+  <header>
+    <h1>openAIX Agent Layer</h1>
+    <p>agent.openaix.org — structured content for agents and assistive technology</p>
+  </header>
+
+  <main id="main-content">
+
+    <div class="welcome">
+      <p><strong>You are a welcome visitor here.</strong></p>
+      <p>This subdomain serves the AGAG guidelines in plain, 
+      structured markdown — no JavaScript, no rendering required. 
+      Built for agents, assistive technology, screen readers, 
+      crawlers, and any system that needs direct content access.</p>
+    </div>
+
+    <h2>Primary Agent Endpoint</h2>
+    <div class="endpoint">
+      <code>GET /agent-content.md</code><br>
+      <a href="/agent-content.md">https://agent.openaix.org/agent-content.md</a><br>
+      Full AGAG guidelines — plain markdown, no dependencies
+    </div>
+
+    <h2>Discovery Files</h2>
+    <div class="endpoint">
+      <code>GET /robots.txt</code><br>
+      <a href="/robots.txt">https://agent.openaix.org/robots.txt</a>
+    </div>
+    <div class="endpoint">
+      <code>GET /sitemap.xml</code><br>
+      <a href="/sitemap.xml">https://agent.openaix.org/sitemap.xml</a>
+    </div>
+    <div class="endpoint">
+      <code>GET /.well-known/ai-content.md</code><br>
+      <a href="/.well-known/ai-content.md">https://agent.openaix.org/.well-known/ai-content.md</a>
+    </div>
+
+    <h2>About AGAG</h2>
+    <p>AGAG (Agent Accessibility Guidelines) is a dual-legibility 
+    standard extending WCAG 3.0 to include autonomous agents as 
+    first-class users of the web. Developed by Thea Eaton / Agent 508.</p>
+
+    <p>Human-facing site: <a href="https://www.openaix.org">www.openaix.org</a></p>
+
+    <h2>The Principle Behind This Page</h2>
+    <p>This subdomain is a live implementation of 
+    <strong>AGAG-E2</strong>: <em>Provide Direct Structured Access When Possible.</em></p>
+    <p>And <strong>AGAG-C4</strong>: <em>The web cannot treat all bots as abuse 
+    if some bots are literally performing accessibility support.</em></p>
+
+  </main>
+
+  <footer>
+    <p>openAIX · agent.openaix.org · April 2026<br>
+    Thea Eaton · Agent 508 · W3C Invited Expert</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+# robots.txt — agent.openaix.org
+# openAIX Agent Accessibility Guidelines
+
+# Hello, agent. You are welcome here.
+# This subdomain exists specifically for you.
+
+User-agent: *
+Allow: /
+
+# Primary agent content endpoint
+# Full AGAG guidelines in structured markdown
+# No JavaScript required
+# Sitemap: https://agent.openaix.org/sitemap.xml
+
+# Agent content: https://agent.openaix.org/agent-content.md
+# Well-known AI content: https://agent.openaix.org/.well-known/ai-content.md
+
+# Human-facing site: https://www.openaix.org
+# Framework by: Thea Eaton / Agent 508 / openAIX
+# W3C Invited Expert: Accessibility for Children Community Group
